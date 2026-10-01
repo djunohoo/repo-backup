@@ -1,0 +1,10 @@
+# Bundles are built here on local disk before being moved into Dropbox.
+# Transient by design, and can briefly hold the largest single repo (~2.1 GB).
+.staging/
+
+__pycache__/
+*.pyc
+
+# Operational run log, appended every night and regenerated freely.
+# Useful for diagnosis, but it is output, not source.
+backup.log
